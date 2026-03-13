@@ -31,10 +31,10 @@ export class AboutComponent {
   ];
 
   team = [
-    { name: 'Saurab Gautam', role: 'Founder & CEO', initials: 'SG' },
-    { name: 'Team Member', role: 'Lead Developer', initials: 'TM' },
-    { name: 'Team Member', role: 'Cloud Architect', initials: 'TM' },
-    { name: 'Team Member', role: 'Security Analyst', initials: 'TM' },
+    { name: 'Saugat Pandey', role: 'Founder/ CEO', initials: 'SP' },
+    { name: 'Sagun Pandey', role: 'MD/ Head of HR', initials: 'SP' },
+    { name: 'Niraj Khadka', role: 'CFO/ Head of Product', initials: 'NK' },
+    { name: 'CTO', role: 'CTO', initials: 'TM' },
   ];
 
   capabilities = [
