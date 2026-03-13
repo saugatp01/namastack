@@ -1,0 +1,9 @@
+[build]
+  command = "ng build"
+  publish = "dist/namastack/browser"
+
+# Redirect all routes to index.html for Angular client-side routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
