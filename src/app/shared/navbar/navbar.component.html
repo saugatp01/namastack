@@ -1,0 +1,62 @@
+<header
+  [class]="scrolled()
+    ? 'fixed top-0 inset-x-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300'
+    : 'fixed top-0 inset-x-0 z-50 bg-transparent transition-all duration-300'"
+>
+  <nav class="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-16">
+    <!-- Logo -->
+    <a routerLink="/" (click)="closeMenu()" class="flex items-center gap-2.5">
+      <img src="logo.svg" alt="Namastack logo" class="w-9 h-9" />
+      <span class="font-bold text-xl text-slate-900">Namastack</span>
+    </a>
+
+    <!-- Desktop nav links -->
+    <ul class="hidden md:flex items-center gap-8">
+      <li>
+        <a routerLink="/" routerLinkActive="text-indigo-600 font-semibold" [routerLinkActiveOptions]="{exact: true}"
+           class="text-slate-600 hover:text-indigo-600 transition-colors text-sm font-medium">Home</a>
+      </li>
+      <li>
+        <a routerLink="/services" routerLinkActive="text-indigo-600 font-semibold"
+           class="text-slate-600 hover:text-indigo-600 transition-colors text-sm font-medium">Services</a>
+      </li>
+      <li>
+        <a routerLink="/about" routerLinkActive="text-indigo-600 font-semibold"
+           class="text-slate-600 hover:text-indigo-600 transition-colors text-sm font-medium">About</a>
+      </li>
+      <li>
+        <a routerLink="/contact"
+           class="bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium px-5 py-2 rounded-lg transition-colors">
+          Contact Us
+        </a>
+      </li>
+    </ul>
+
+    <!-- Mobile hamburger -->
+    <button (click)="toggleMenu()" class="md:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100 transition-colors"
+            aria-label="Toggle menu">
+      @if (menuOpen()) {
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      } @else {
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      }
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  @if (menuOpen()) {
+    <div class="md:hidden bg-white border-t border-slate-100 px-6 py-4 flex flex-col gap-4">
+      <a routerLink="/" (click)="closeMenu()" class="text-slate-700 hover:text-indigo-600 font-medium transition-colors">Home</a>
+      <a routerLink="/services" (click)="closeMenu()" class="text-slate-700 hover:text-indigo-600 font-medium transition-colors">Services</a>
+      <a routerLink="/about" (click)="closeMenu()" class="text-slate-700 hover:text-indigo-600 font-medium transition-colors">About</a>
+      <a routerLink="/contact" (click)="closeMenu()"
+         class="bg-indigo-600 text-white text-center font-medium px-5 py-2 rounded-lg hover:bg-indigo-700 transition-colors">
+        Contact Us
+      </a>
+    </div>
+  }
+</header>
