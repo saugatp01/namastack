@@ -2,7 +2,7 @@ import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import emailjs from '@emailjs/browser';
 
-const EMAILJS_SERVICE_ID = 'service_btw43e3';
+const EMAILJS_SERVICE_ID = 'service_vlgaq4g';
 const EMAILJS_TEMPLATE_ID = 'template_y7lg5k4';
 const EMAILJS_PUBLIC_KEY = 'Pzrkit9jiT-R43e_7';
 
