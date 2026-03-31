@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 38" fill="none">
+  <!--
+    Three stacked arcs — widening toward the bottom.
+    References both "Namaste" (curved pressed hands, upward)
+    and "Stack" (layered horizontal elements).
+    Top arc = smallest + darkest. Bottom = widest + lightest.
+  -->
+
+  <!-- Arc 1 — top, narrowest, deepest indigo -->
+  <path
+    d="M 16,11 Q 22,2 28,11"
+    stroke="#3730a3"
+    stroke-width="4"
+    stroke-linecap="round"
+    fill="none"
+  />
+
+  <!-- Arc 2 — middle, medium, indigo -->
+  <path
+    d="M 10,22 Q 22,11 34,22"
+    stroke="#6366f1"
+    stroke-width="4"
+    stroke-linecap="round"
+    fill="none"
+  />
+
+  <!-- Arc 3 — bottom, widest, soft violet -->
+  <path
+    d="M 4,33 Q 22,20 40,33"
+    stroke="#a5b4fc"
+    stroke-width="4"
+    stroke-linecap="round"
+    fill="none"
+  />
+</svg>

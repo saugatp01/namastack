@@ -49,11 +49,4 @@ export class HomeComponent {
       description: 'Manual and automated testing, performance validation, and continuous quality assurance.',
     },
   ];
-
-  stats = [
-    { value: '50+', label: 'Projects Delivered' },
-    { value: '30+', label: 'Happy Clients' },
-    { value: '5+', label: 'Years Experience' },
-    { value: '10+', label: 'Expert Team' },
-  ];
 }
