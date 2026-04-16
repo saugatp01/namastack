@@ -1,48 +1,78 @@
-<footer class="bg-slate-900 text-slate-300 mt-auto">
-  <div class="max-w-7xl mx-auto px-6 lg:px-8 py-14 grid grid-cols-1 md:grid-cols-4 gap-10">
-    <!-- Brand -->
-    <div class="md:col-span-2">
-      <div class="flex items-center gap-2.5 mb-4">
-        <img src="logo.svg" alt="Namastack logo" class="w-9 h-9" />
-        <span class="font-bold text-xl text-white">Namastack</span>
+<footer class="dark-band text-slate-400">
+
+  <!-- Thin gradient top line -->
+  <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(99,102,241,.5) 30%,rgba(124,58,237,.5) 70%,transparent)"></div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 pt-14 pb-0">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b" style="border-color:rgba(255,255,255,.06)">
+
+      <!-- Brand -->
+      <div class="md:col-span-5">
+        <div class="flex items-center gap-2.5 mb-5">
+          <img src="logo.svg" alt="Namastack" class="w-8 h-8" style="filter:brightness(0) invert(1);opacity:.85"/>
+          <span class="font-extrabold text-white text-lg tracking-tight" style="font-family:'Plus Jakarta Sans',sans-serif">Namastack</span>
+        </div>
+        <p class="text-sm leading-relaxed max-w-xs text-slate-400">
+          World-class software engineering, cloud infrastructure, and cybersecurity delivered to businesses globally.
+        </p>
+        <div class="flex items-center gap-2 mt-5">
+          <span class="dot-pulse-green"></span>
+          <span class="text-emerald-400 text-xs font-bold tracking-widest uppercase">Available for new projects</span>
+        </div>
       </div>
-      <p class="text-sm leading-relaxed max-w-xs">
-        A global technology company delivering world-class software engineering, cloud, data, and security services to clients worldwide.
-      </p>
+
+      <div class="md:col-span-1"></div>
+
+      <!-- Company -->
+      <div class="md:col-span-2">
+        <h4 class="text-white font-bold text-xs uppercase tracking-widest mb-5">Company</h4>
+        <ul class="space-y-3 text-sm">
+          <li><a routerLink="/about" class="hover:text-indigo-400 transition-colors">About Us</a></li>
+          <li><a routerLink="/services" class="hover:text-indigo-400 transition-colors">Services</a></li>
+          <li><a routerLink="/contact" class="hover:text-indigo-400 transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="md:col-span-2">
+        <h4 class="text-white font-bold text-xs uppercase tracking-widest mb-5">Services</h4>
+        <ul class="space-y-3 text-sm">
+          <li><a routerLink="/services" class="hover:text-indigo-400 transition-colors">Web & App Dev</a></li>
+          <li><a routerLink="/services" class="hover:text-indigo-400 transition-colors">Cloud & DevOps</a></li>
+          <li><a routerLink="/services" class="hover:text-indigo-400 transition-colors">Cybersecurity</a></li>
+          <li><a routerLink="/services" class="hover:text-indigo-400 transition-colors">Data & Analytics</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="md:col-span-2">
+        <h4 class="text-white font-bold text-xs uppercase tracking-widest mb-5">Reach Us</h4>
+        <ul class="space-y-3 text-sm">
+          <li>
+            <a href="mailto:info@namastack.com" class="flex items-center gap-2 hover:text-indigo-400 transition-colors">
+              <svg class="w-3.5 h-3.5 text-indigo-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+              info&#64;namastack.com
+            </a>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-3.5 h-3.5 text-indigo-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+            Kathmandu, Nepal
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <!-- Links -->
-    <div>
-      <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Company</h4>
-      <ul class="space-y-2 text-sm">
-        <li><a routerLink="/about" class="hover:text-indigo-400 transition-colors">About Us</a></li>
-        <li><a routerLink="/services" class="hover:text-indigo-400 transition-colors">Services</a></li>
-        <li><a routerLink="/contact" class="hover:text-indigo-400 transition-colors">Contact</a></li>
-      </ul>
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 py-6 text-xs text-slate-600">
+      <p>&copy; {{ currentYear }} Namastack. All rights reserved.</p>
+      <div class="flex items-center gap-2">
+        <span class="w-1 h-1 rounded-full" style="background:linear-gradient(135deg,#4f46e5,#7c3aed);display:inline-block"></span>
+        <span>Crafted with care · Delivered globally</span>
+      </div>
     </div>
-
-    <!-- Contact -->
-    <div>
-      <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Contact</h4>
-      <ul class="space-y-2 text-sm">
-        <li class="flex items-center gap-2">
-          <svg class="w-4 h-4 text-indigo-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-          </svg>
-          <span>info&#64;namastack.com</span>
-        </li>
-        <li class="flex items-center gap-2">
-          <svg class="w-4 h-4 text-indigo-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-          </svg>
-          <span>Kathmandu, Nepal</span>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="border-t border-slate-800 py-6 text-center text-xs text-slate-500">
-    &copy; {{ currentYear }} Namastack. All rights reserved.
   </div>
 </footer>

@@ -1,19 +1,27 @@
-<!-- Page Header -->
-<section class="pt-32 pb-16 bg-gradient-to-br from-slate-900 to-indigo-950 text-center">
-  <div class="max-w-3xl mx-auto px-6">
-    <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Who We Are</h1>
-    <p class="text-slate-300 text-lg leading-relaxed">
-      A global technology company built on engineering excellence, delivering end-to-end digital solutions to clients worldwide.
+<!-- Header -->
+<section class="hero-bg relative pt-32 pb-20 overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none opacity-40" style="
+    background-image:linear-gradient(rgba(99,102,241,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(99,102,241,.07) 1px,transparent 1px);
+    background-size:64px 64px;
+    mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 40%,transparent 100%);"></div>
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="ns-tag mb-5 anim-tag">About Us</div>
+    <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight mb-5 anim-h1a">
+      Who we are,<br><span class="gradient-text">why it matters.</span>
+    </h1>
+    <p class="text-slate-500 text-lg max-w-xl leading-relaxed anim-body">
+      A globally distributed technology company on a mission to prove that world-class engineering knows no borders.
     </p>
   </div>
 </section>
 
-<!-- Story Section -->
-<section class="py-20 bg-white">
+
+<!-- Story -->
+<section class="py-20 bg-white border-t border-slate-100">
   <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
-    <div>
-      <h2 class="text-3xl font-bold text-slate-900 mb-6">Our Story</h2>
-      <div class="space-y-4 text-slate-600 leading-relaxed">
+    <div class="reveal">
+      <h2 class="text-2xl font-extrabold text-slate-900 mb-6 tracking-tight">Our Story</h2>
+      <div class="space-y-4 text-slate-500 leading-relaxed">
         <p>
           Namastack was founded on the belief that exceptional software doesn't require proximity — it requires talent, discipline, and the right culture.
         </p>
@@ -21,85 +29,92 @@
           Today, we serve startups, scale-ups, and enterprises across multiple industries and continents. Our team brings depth across full-stack engineering, cloud infrastructure, data, security, and design — operating as a unified, globally distributed unit.
         </p>
         <p>
-          The name <strong>"Namastack"</strong> is a fusion of <em>Namaste</em> — a universal greeting of respect — and <em>stack</em>, representing the technology layers we master. It reflects who we are: a team that meets every client with warmth, and every challenge with technical depth.
+          The name <strong class="text-slate-800">"Namastack"</strong> is a fusion of <em class="text-indigo-600">Namaste</em> — a universal greeting of respect — and <em class="text-indigo-600">stack</em>, representing the technology layers we master.
         </p>
       </div>
     </div>
 
-    <div class="bg-gradient-to-br from-indigo-50 to-violet-50 rounded-3xl p-10">
-      <div class="grid grid-cols-2 gap-5">
-        @for (cap of capabilities; track cap) {
-          <div class="bg-white rounded-xl px-4 py-3 shadow-sm flex items-center gap-3">
-            <div class="w-2 h-2 bg-indigo-500 rounded-full shrink-0"></div>
-            <span class="text-sm text-slate-700 font-medium">{{ cap }}</span>
-          </div>
-        }
+    <div class="reveal reveal-d2">
+      <div class="bg-gradient-to-br from-slate-50 to-indigo-50 rounded-2xl p-8 border border-slate-100">
+        <div class="grid grid-cols-2 gap-3">
+          @for (cap of capabilities; track cap) {
+            <div class="bg-white rounded-xl px-4 py-3 shadow-sm border border-slate-100 flex items-center gap-2.5">
+              <div class="w-2 h-2 rounded-full bg-indigo-500 shrink-0"></div>
+              <span class="text-sm text-slate-700 font-medium">{{ cap }}</span>
+            </div>
+          }
+        </div>
       </div>
     </div>
   </div>
 </section>
 
+
 <!-- Mission & Vision -->
-<section class="py-20 bg-slate-900 text-white">
-  <div class="max-w-7xl mx-auto px-6 lg:px-8 grid md:grid-cols-2 gap-10">
-    <div class="bg-slate-800 rounded-2xl p-8">
-      <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center mb-4">
-        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+<section class="dark-band py-20">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 grid md:grid-cols-2 gap-8">
+    <div class="reveal rounded-xl p-8 border" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.08)">
+      <div class="w-10 h-10 rounded-lg flex items-center justify-center mb-5"
+           style="background:rgba(99,102,241,.2);border:1px solid rgba(99,102,241,.3)">
+        <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
         </svg>
       </div>
-      <h3 class="text-xl font-bold mb-3">Our Mission</h3>
-      <p class="text-slate-300 leading-relaxed">
+      <h3 class="text-xl font-bold text-white mb-3">Our Mission</h3>
+      <p class="text-slate-400 leading-relaxed">
         To deliver technology that works — reliably, elegantly, and at scale — helping our clients build better products, move faster, and stay ahead.
       </p>
     </div>
-    <div class="bg-slate-800 rounded-2xl p-8">
-      <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center mb-4">
-        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+    <div class="reveal reveal-d2 rounded-xl p-8 border" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.08)">
+      <div class="w-10 h-10 rounded-lg flex items-center justify-center mb-5"
+           style="background:rgba(124,58,237,.2);border:1px solid rgba(124,58,237,.3)">
+        <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
         </svg>
       </div>
-      <h3 class="text-xl font-bold mb-3">Our Vision</h3>
-      <p class="text-slate-300 leading-relaxed">
+      <h3 class="text-xl font-bold text-white mb-3">Our Vision</h3>
+      <p class="text-slate-400 leading-relaxed">
         To be a globally recognized technology partner — known not just for what we build, but for how we build it: with care, precision, and long-term thinking.
       </p>
     </div>
   </div>
 </section>
 
-<!-- Values Section -->
+
+<!-- Values -->
 <section class="py-20 bg-white">
   <div class="max-w-7xl mx-auto px-6 lg:px-8">
-    <h2 class="text-3xl font-bold text-slate-900 text-center mb-12">Our Values</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      @for (value of values; track value.title) {
-        <div class="text-center p-6 rounded-2xl border border-slate-100 hover:border-indigo-200 hover:shadow-md transition-all">
-          <div class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center mx-auto mb-4">
+    <h2 class="text-2xl font-extrabold text-slate-900 text-center mb-12 tracking-tight reveal">Our Values</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      @for (value of values; track value.title; let i = $index) {
+        <div class="ns-card p-6 text-center reveal" [style.transitionDelay]="(i * 0.1) + 's'">
+          <div class="w-11 h-11 bg-indigo-50 rounded-xl flex items-center justify-center mx-auto mb-4"
+               style="border:1px solid rgba(99,102,241,.2)">
             @switch (value.icon) {
               @case ('star') {
-                <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
                 </svg>
               }
               @case ('users') {
-                <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
                 </svg>
               }
               @case ('globe') {
-                <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 004 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 004 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
               }
               @case ('refresh') {
-                <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
                 </svg>
               }
             }
           </div>
-          <h3 class="font-semibold text-slate-900 mb-2">{{ value.title }}</h3>
+          <h3 class="font-bold text-slate-900 mb-2">{{ value.title }}</h3>
           <p class="text-sm text-slate-500 leading-relaxed">{{ value.description }}</p>
         </div>
       }
@@ -107,33 +122,38 @@
   </div>
 </section>
 
-<!-- Team Section -->
+
+<!-- Team -->
 <section class="py-20 bg-slate-50">
   <div class="max-w-7xl mx-auto px-6 lg:px-8">
-    <h2 class="text-3xl font-bold text-slate-900 text-center mb-12">The Executive Team</h2>
-    <div class="max-w-2xl mx-auto">
-      @for (member of team; track member.name + member.role) {
-        <div class="bg-white rounded-2xl p-8 border border-slate-100 text-center">
-          <div class="w-20 h-20 bg-gradient-to-br from-indigo-500 to-violet-600 rounded-full flex items-center justify-center mx-auto mb-4">
+    <h2 class="text-2xl font-extrabold text-slate-900 text-center mb-12 tracking-tight reveal">The Executive Team</h2>
+    <div class="max-w-md mx-auto">
+      @for (member of team; track member.name) {
+        <div class="ns-card p-8 text-center reveal">
+          <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+               style="background:linear-gradient(135deg,#4f46e5,#7c3aed)">
             <span class="text-white font-bold text-xl">SP</span>
           </div>
-          <div class="font-bold text-slate-900 text-lg mb-2">{{ member.name }}</div>
-          <div class="text-indigo-600 font-semibold mb-4">{{ member.role }}</div>
-          <p class="text-slate-600 leading-relaxed">{{ member.description }}</p>
+          <div class="font-bold text-slate-900 text-lg mb-1">{{ member.name }}</div>
+          <div class="text-indigo-600 font-semibold text-sm mb-4">{{ member.role }}</div>
+          <p class="text-slate-500 leading-relaxed text-sm">{{ member.description }}</p>
         </div>
       }
     </div>
   </div>
 </section>
 
+
 <!-- CTA -->
 <section class="py-20 bg-indigo-600">
-  <div class="max-w-3xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold text-white mb-4">Want to work with us?</h2>
-    <p class="text-indigo-200 mb-8">We are always open to exciting projects and new partnerships.</p>
-    <a routerLink="/contact"
-       class="inline-block bg-white text-indigo-700 hover:bg-indigo-50 font-semibold px-10 py-4 rounded-xl transition-colors">
+  <div class="max-w-2xl mx-auto px-6 text-center reveal">
+    <h2 class="text-3xl font-extrabold text-white tracking-tight mb-4">Want to work with us?</h2>
+    <p class="text-indigo-200 mb-8 leading-relaxed">We are always open to exciting projects and new partnerships.</p>
+    <a routerLink="/contact" class="ns-btn ns-btn-ghost-white">
       Get In Touch
+      <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+      </svg>
     </a>
   </div>
 </section>
